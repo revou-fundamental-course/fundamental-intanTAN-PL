@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Intan</title>
+    <!-- ini nge link ke css, hreff nya css (folder) style.css (file)-->
+    <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
-    
+    <!-- ini header nav -->
+    <header class="nav-container">
+        <!-- pake div untuk logo icon di navigation-->
+        <div class="logo-icon"></div>
+        <!-- cara agar nav berfungsi adalah kasih href trus id di sectionnya.
+        jd pas nav nya di klik akan mengarah ke halaman yg id di section -->
+        <nav>
+            <a>Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a>Portofolio</a>
+            <a>Message Us</a>
+        </nav>
+    </header>
+
+    <hr> <!-- ini horizontal line : memberi garis -->
+
+<main>
+    <!-- Ini Home content -->
+    <section>
+        <header>
+            <h1> Hi User, Welcome to Website </h1>
+        </header>
+        <!-- pake article untuk content nya, sebenernya bisa pake section juga,
+        tapi kan section udh dipake, biar ga bingung jd pake article-->
+        <article>
+            <p> Ini adalah website portofolio saya </p>
+
+            <div class="banner-container"></div>
+        </article>
+    </section>
+    <hr>
+    <!-- Ini Our Profile content -->
+    <section id="our-profile">
+        <header>
+            <h1> Our Profile </h1>
+        </header>
+        <article class="profile-content">
+            <!-- nah disini kita bikin bulet2 nya -->
+            <div class="profile-item"> <!-- div pertama untuk membungkus konten -->
+            <!-- div kedua untuk nampilin gambar -->
+                <div class="profile-icon profile-1"> </div> 
+                <p> Profile 1 </p> 
+            </div>
+            <div class="profile-item"> 
+                <div class="profile-icon profile-2"> </div> 
+                <p> Profile 2 </p> 
+            </div>
+            <div class="profile-item"> 
+                <div class="profile-icon profile-3"> </div> 
+                <p> Profile 3 </p> 
+            </div>
+
+            <div class="divider"></div>
+        </article>
+    </section>
+
+    <!-- Ini Portofolio content -->
+
+    <!-- Ini Message Us content -->
+</main>
 </body>
 </html>

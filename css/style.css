@@ -1,1 +1,76 @@
 /* ini css */
+
+main{
+    padding: 32px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    /* border bisa dihapus setelah logo ada, karena fungsi awal border dibuat untuk bisa lihat bentuk layout aja*/
+    border: 1px solid;
+    /* untuk image icon nya */
+    background-image: url(../assets/logo\ ichips.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
+/* gaperlu pake class, jd langsung manggil nav aja, dan menggunakan
+>a yg berfungsi untuk memanggil otomatis semua a yg ada di nav untuk 
+di style seperti di bawah ini */
+nav>a {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.banner-container {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    /* border bisa dihapus setelah logo ada, karena fungsi awal border dibuat untuk bisa lihat bentuk layout aja*/
+    border: 1px solid;
+    /* untuk image icon nya */
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* cari gambar yg buat logo biar bisa diinput dan muncul*/
+.profle-1 {
+    background-image: url(../assets/lambang\ jmti.png);
+}
+
+.profle-2 {
+    background-image: url(../assets/Lambang_ITK.png);
+}
+
+.profle-3 {
+    background-image: url(../assets/logo\ pkm.png);
+}
+
+.divider {
+    flex: 2;
+}
