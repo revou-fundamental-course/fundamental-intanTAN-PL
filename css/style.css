@@ -1,12 +1,14 @@
-/* ini css */
+/* ini css buat style atau mempercantik web nya */
 
 body{
     background-color: bisque;
+    font-family:Verdana, Tahoma, sans-serif;
 }
 
 .logo-icon {
     height: 50px;
     width: 50px;
+    margin-left: 10px;
     /* border bisa dihapus setelah logo ada, karena fungsi awal border dibuat untuk bisa lihat bentuk layout aja*/
     /*border: 1px solid;*/
     /* untuk image icon nya */
@@ -20,11 +22,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: small;
     /*ini biar nav nya tetep ada walau di scroll*/
-    /* top: 0;
+    top: 0;
     position: fixed;
     width: 100%;
-    z-index: 1; */
+    z-index: 1;
 }
 /* gaperlu pake class, jd langsung manggil nav aja, dan menggunakan
 >a yg berfungsi untuk memanggil otomatis semua a yg ada di nav untuk 
@@ -32,7 +35,11 @@ di style seperti di bawah ini */
 nav>a {
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 1px solid;
+    background-color: #38150f;
+    color: #fefbf1;
 }
 
 main{
@@ -86,10 +93,12 @@ main{
 .grid-container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    
 }
 
 .menu {
     text-align: center;
+    font-size: small;
 }
 
 
