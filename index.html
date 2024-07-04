@@ -3,70 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Intan</title>
-    <!-- ini nge link ke css, hreff nya css (folder) style.css (file)-->
-    <link rel="stylesheet" href="css/style.css"
+    <title>ICHIP'S BAKERY</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo ichips.jpeg">
+    <!--menyambungkan ke css, hreff nya css(folder) style.css(file)-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- ini header nav -->
+    <!--INI HEADER ISINYA NAVIGATION-->
     <header class="nav-container">
-        <!-- pake div untuk logo icon di navigation-->
-        <div class="logo-icon"></div>
-        <!-- cara agar nav berfungsi adalah kasih href trus id di sectionnya.
-        jd pas nav nya di klik akan mengarah ke halaman yg id di section -->
+        <!--menggunakan div untuk logo icon di navigation-->
+        <div class="logo-icon"></div> 
+        <!--menggunakan href di setiap nav agar dapat berfungsi, pada section juga diberi id-->
+        <!--sehingga saat di klik, akan mengalah ke halaman yang sesuai dengan id pada section-->
         <nav>
-            <a>Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a>Portofolio</a>
-            <a>Message Us</a>
+            <a href="#home">Home</a>
+            <a href="#our-team">Our Team</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact-us">Contact Us</a>
         </nav>
     </header>
 
-    <hr> <!-- ini horizontal line : memberi garis -->
+    <hr> <!--horizontal line : memberi garis-->
 
 <main>
-    <!-- Ini Home content -->
-    <section>
+    <!--INI HOME CONTENT-->
+    <section id="home">
         <header>
-            <h1> Hi User, Welcome to Website </h1>
+            <h1>Hi Foodie, Welcome to Ichip's Bakery</h1>
         </header>
-        <!-- pake article untuk content nya, sebenernya bisa pake section juga,
-        tapi kan section udh dipake, biar ga bingung jd pake article-->
+        <!--menggunakan article untuk kontennya, sebenernya bisa pake section juga, tapi kan section sudah digunakan, biar tidak bingung jadi pake article-->
         <article>
-            <p> Ini adalah website portofolio saya </p>
+            <p>
+                Kue kering banyak rasanya <br>
+                Rasa manis aroma mewangi <br>
+                Kalau bingung mau beli dimana <br>
+                Ayoo sini ke Ichip's Bakery <br>
+            </p>
+            <p> TASTE THE MOOD, FEEL THE JOY! </p>
+            <!--menggunakan div untuk booking tempat untuk meletakkan banner nanti-->
 
-            <div class="banner-container"></div>
+            <!--container untuk banner slide-->
+            <div class="banner-slide-container">
+                <!--banner slide items-->
+                <div class="banner-slide-item" style="background-image: url('assets/slide1.png');">
+                </div>
+                <div class="banner-slide-item" style="background-image: url('assets/slide2.png');">
+                </div>
+                <div class="banner-slide-item" style="background-image: url('assets/slide3.png');">
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
         </article>
     </section>
     <hr>
-    <!-- Ini Our Profile content -->
-    <section id="our-profile">
+    <!--INI OUR TEAM CONTENT-->
+    <section id="our-team">
         <header>
-            <h1> Our Profile </h1>
+            <h1>Our Team</h1>
         </header>
         <article class="profile-content">
-            <!-- nah disini kita bikin bulet2 nya -->
-            <div class="profile-item"> <!-- div pertama untuk membungkus konten -->
-            <!-- div kedua untuk nampilin gambar -->
+            <!--nah disini kita bikin bulet2 nya-->
+            <div class="profile-item"> <!--div pertama ini untuk membungkus konten (gambar dan tulisan)-->
+                <!--div kedua untuk menampilkan gambar-->
                 <div class="profile-icon profile-1"> </div> 
-                <p> Profile 1 </p> 
+                <p> Bagian Produksi <br>
+                    `Angga`</p>
             </div>
             <div class="profile-item"> 
                 <div class="profile-icon profile-2"> </div> 
-                <p> Profile 2 </p> 
+                <p> Bagian Keuangan <br>
+                    `Morion` </p> 
             </div>
             <div class="profile-item"> 
                 <div class="profile-icon profile-3"> </div> 
-                <p> Profile 3 </p> 
+                <p> Bagian Pemasaran <br>
+                    `Nana` </p> 
             </div>
-
             <div class="divider"></div>
         </article>
     </section>
+    <hr>
+    <!--INI MENU CONTENT-->
+    <section id="menu">
+        <header>
+            <h1>Menu</h1>
+        </header>
+        <article >
+            <!--isi konten dari menu-->
+            <div class="grid-container">
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu1.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Kastengel 250gr <br> Rp 68.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu2.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Rambutan 250gr <br> Rp 72.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu3.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Palm Sugar 250gr <br> Rp 68.000</figcaption>
+                    </figure>
+                </div>
+                <figure class="menu">
+                    <img src="assets/menu4.jpeg" width="100" alt="menu1"/>
+                    <figcaption>Putri Salju 250gr <br> Rp 68.000</figcaption>
+                </figure>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu5.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Nastar 250gr <br> Rp 72.000</figcaption>
+                    </figure>
+                </div>
+                <!--alt untuk kalo gambar ga muncul nanti ada text aja-->
+            </div>
+            <div class="grid-container">
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper1.jpg" width="100" alt="menu1"/>
+                        <figcaption>Hampers Glasses<br> Rp 120.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper2.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Hampers Box1<br> Rp 140.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper3.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Hampers Tile3<br> Rp 170.000</figcaption>
+                    </figure>
+                </div>
+                <figure class="menu">
+                    <img src="assets/hamper4.jpg" width="100" alt="menu1"/>
+                    <figcaption>Hampers Box2<br> Rp 240.000</figcaption>
+                </figure>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper5.jpeg" width="100" alt="menu1"/>
+                        <figcaption>Hampers Plastic<br> Rp 120.000</figcaption>
+                    </figure>
+                </div>  
+            </div>
+            <div class="grid-container">
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper6.png" width="100" alt="menu1"/>
+                        <figcaption>Hampers MiniGreen<br> Rp 35.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu6.png" width="100" alt="menu1"/>
+                        <figcaption>Panada<br> Rp 28.000</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/menu7.png" width="100" alt="menu1"/>
+                        <figcaption>Susu Kurma<br> Rp 12.000</figcaption>
+                    </figure>
+                </div>
+                <figure class="menu">
+                    <img src="assets/menu8.jpeg" width="100" alt="menu1"/>
+                    <figcaption>Cheese Burger<br> Rp 32.000</figcaption>
+                </figure>
+                <div>
+                    <figure class="menu">
+                        <img src="assets/hamper7.png" width="100" alt="menu1"/>
+                        <figcaption>Hampers MiniRed<br> Rp 35.000</figcaption>
+                    </figure>
+                </div>  
+            </div>
+        </article>
+    </section>
+    <hr>
+    <!--INI CONTACT US CONTENT-->
+    <section id="contact-us">
+        <header>
+            <h1> Contact Us </h1>
+        </header>
+        <article style="display: flex; justify-content: space-between;">
+            
+                <form>
+                    <!--ini pake table biar rapi-->
+                    <!--for itu digunakan untuk pelabelan yg khusus id, makannya input harus ada id, jd dia akan ngebaca id yg dimasukkan ke dalam input-->
+                    <!--required itu untuk validasi pertama kalau form ga diisi-->
+                    <table>
+                        <tr>
+                            <td> <label for="nama">Nama</label> </td>
+                            <td> : <input type="text" id="nama" required> </td>
+                        </tr> 
+                        <tr>
+                            <td> <label>Tanggal Lahir</label> </td>
+                            <td> : <input type="date" name="tanggal" id="tanggal" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label>Jenis Kelamin</label> </td>
+                            <td> : <label><input type="radio" id="lakilaki" name="jenis_kelamin" value="Laki-laki" required>Laki-laki</label> </td>
+                            <td> <label><input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>Perempuan</label> </td>
+                        </tr>
+                        <tr>
+                            <td> <label>Pesan</label> </td>
+                            <td> : <input type="text" id="pesan" maxlength="50" required> </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <button type="button" onclick="validateForm();">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
 
-    <!-- Ini Portofolio content -->
-
-    <!-- Ini Message Us content -->
+                <div id="result" style="border: 1px solid; height: 100px; width: 100px;"> </div>
+            
+           
+        </article>
+    </section>
 </main>
+<!--conect ke js nya-->
+<script src="js/script.js"></script>
+
 </body>
+
+<footer>
+    created by Ichip's 2021
+</footer>
 </html>

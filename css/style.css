@@ -1,20 +1,14 @@
 /* ini css */
 
-main{
-    padding: 32px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body{
+    background-color: bisque;
 }
 
 .logo-icon {
     height: 50px;
     width: 50px;
     /* border bisa dihapus setelah logo ada, karena fungsi awal border dibuat untuk bisa lihat bentuk layout aja*/
-    border: 1px solid;
+    /*border: 1px solid;*/
     /* untuk image icon nya */
     background-image: url(../assets/logo\ ichips.jpeg);
     background-size: cover;
@@ -22,6 +16,16 @@ main{
     
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*ini biar nav nya tetep ada walau di scroll*/
+    /* top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1; */
+}
 /* gaperlu pake class, jd langsung manggil nav aja, dan menggunakan
 >a yg berfungsi untuk memanggil otomatis semua a yg ada di nav untuk 
 di style seperti di bawah ini */
@@ -29,6 +33,10 @@ nav>a {
     padding-left: 32px;
     padding-right: 32px;
     border: 1px solid;
+}
+
+main{
+    padding: 32px;
 }
 
 .banner-container {
@@ -49,10 +57,10 @@ nav>a {
 }
 
 .profile-icon {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     /* border bisa dihapus setelah logo ada, karena fungsi awal border dibuat untuk bisa lihat bentuk layout aja*/
-    border: 1px solid;
+    /* border: 1px solid;
     /* untuk image icon nya */
     background-size: cover;
     border-radius: 50%;
@@ -60,17 +68,95 @@ nav>a {
 
 /* cari gambar yg buat logo biar bisa diinput dan muncul*/
 .profile-1 {
-    background-image: url(../assets/lambang\ jmti.png);
+    background-image: url(../assets/profil1.jpeg);
 }
 
 .profile-2 {
-    background-image: url(../assets/Lambang_ITK.png);
+    background-image: url(../assets/profil2.jpeg);
 }
 
 .profile-3 {
-    background-image: url(../assets/logo\ pkm.png);
+    background-image: url(../assets/profil3.jpeg);
 }
 
 .divider {
     flex: 2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.menu {
+    text-align: center;
+}
+
+
+/*INI UNTUK FORM*/
+
+
+/*INI UNTUK TABEL HASIL*/
+/*table*/, th, td {
+    width: 100%;
+    border: 1px solid rgb(55, 12, 12);
+    padding: 10px;
+    background-color: #fed576;
+}
+
+footer{
+    text-align: end;
+}
+
+
+/*ini untuk responsive desain*/
+@media only screen and (max-width: 520px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    .our-team {
+        flex-direction: column;
+    }
+}
+
+/*TES SLIDE*/
+/* Styling untuk container banner slide */
+.banner-slide-container {
+    position: relative;
+    width: 1200px;
+    height: 350px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Styling untuk item banner slide */
+.banner-slide-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+}
+* Styling untuk tombol navigasi */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
